@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./base/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Marcellus";
+  src: url(./base/fonts/Marcellus-Regular.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Marcellus";
+}
+h1 {
+  font-size: 144px;
+}
+h2 {
+  font-size: 96px;
+}
+h3 {
+  font-size: 48px;
+}
+h4 {
+  font-size: 36px;
+}
+h5 {
+  font-size: 24px;
+}
+
+p {
+  font-family: "Roboto";
+  font-size: 18px;
+}

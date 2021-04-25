@@ -1,0 +1,13 @@
+.reseaux {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr 4fr;
+  font-family: "Roboto";
+  .linkedin {
+    grid-column: 2/3;
+    justify-self: center;
+  }
+  .git {
+    grid-column: 3/4;
+    justify-self: center;
+  }
+}

@@ -1,0 +1,19 @@
+.scroll {
+  writing-mode: vertical-lr;
+  position: absolute;
+  margin-right: 11.5%;
+  right: 0;
+  bottom: 180px;
+  color: $noir;
+  &::after {
+    content: "";
+    width: 1px;
+    position: absolute;
+    height: 50px;
+    background-color: $noir;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: -60px;
+  }
+}

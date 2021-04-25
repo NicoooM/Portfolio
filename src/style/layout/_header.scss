@@ -1,0 +1,15 @@
+header {
+  height: 1vh;
+  display: grid;
+  grid-template-columns: 20% 1fr 30%;
+  a {
+    grid-column: 1/2;
+  }
+  nav {
+    grid-column: 3/4;
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.project {
+  color: $noir;
+  h1 {
+    margin-top: 16vh;
+  }
+  h3 {
+    margin-top: 5vh;
+    text-align: right;
+  }
+  .details {
+    margin-top: 12vh;
+    padding: 0 13vw 0 13vw;
+    display: flex;
+    flex-direction: column;
+    .details-haut {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16vh;
+      h4 {
+        margin-bottom: 29px;
+      }
+      .missions {
+        ul li {
+          font-family: "Roboto";
+          font-size: 18px;
+          &:nth-child(1n + 2) {
+            margin-top: 11px;
+          }
+        }
+      }
+    }
+    .resume {
+      margin-bottom: 8vh;
+      p:nth-child(1n + 2) {
+        margin-top: 15px;
+      }
+    }
+    .project-link {
+      display: flex;
+      a {
+        align-self: center;
+        font-size: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.reseaux-side {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90px;
+  align-items: center;
+}

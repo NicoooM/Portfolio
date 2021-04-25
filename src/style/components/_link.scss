@@ -1,0 +1,15 @@
+a {
+  text-decoration: none;
+  &.roboto {
+    font-family: "Roboto";
+  }
+  &.marcellus {
+    font-family: "Marcellus";
+  }
+  &.black-link {
+    color: $noir;
+  }
+  &.white-link {
+    color: $blanc;
+  }
+}
