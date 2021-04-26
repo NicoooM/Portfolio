@@ -157,29 +157,11 @@ body.addEventListener("mouseover", function (e) {
 var landingTextProject1 = document.querySelector("#landing-text-projet-1");
 var landingTextProject2 = document.querySelector("#landing-text-projet-2");
 var landingTextProject3 = document.querySelector("#landing-text-projet-3");
-var landingTextProject4 = document.querySelector("#landing-text-projet-4"); // const landingTextsProject = [
-//   landingTextProject1,
-//   landingTextProject2,
-//   landingTextProject3,
-//   landingTextProject4,
-// ];
-
+var landingTextProject4 = document.querySelector("#landing-text-projet-4");
 var landingNumProject1 = document.querySelector(".projet-1-link");
 var landingNumProject2 = document.querySelector(".projet-2-link");
 var landingNumProject3 = document.querySelector(".projet-3-link");
-var landingNumProject4 = document.querySelector(".projet-4-link"); // const landingNumsProject = [
-//   landingNumProject1,
-//   landingNumProject2,
-//   landingNumProject3,
-//   landingNumProject4,
-// ];
-// const landingProjects = {
-//   landingNumProject1: landingTextProject1,
-//   landingNumProject2: landingTextProject2,
-//   landingNumProject3: landingTextProject3,
-//   landingNumProject4: landingTextProject4,
-// };
-
+var landingNumProject4 = document.querySelector(".projet-4-link");
 landingNumProject1.addEventListener("mouseenter", function () {
   landingTextProject1.classList.add("active");
 });
@@ -203,14 +185,7 @@ landingNumProject4.addEventListener("mouseenter", function () {
 });
 landingNumProject4.addEventListener("mouseleave", function () {
   landingTextProject4.classList.remove("active");
-}); // for (const num in landingProjects) {
-//   num.addEventListener("mouseenter", () => {
-//     landingProject[num].classList.add("active");
-//   });
-//   num.addEventListener("mouseleave", () => {
-//     landing[num].classList.remove("active");
-//   });
-// }
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -239,7 +214,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51885" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58443" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

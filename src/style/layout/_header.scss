@@ -2,6 +2,17 @@ header {
   height: 1vh;
   display: grid;
   grid-template-columns: 20% 1fr 30%;
+  @include media("<=desktop") {
+    grid-template-columns: 3fr 1fr 4fr;
+  }
+  @include media("<=tablet") {
+    grid-template-columns: 5fr 1fr 8fr;
+    font-size: 14px;
+  }
+  @include media("<=phone") {
+    grid-template-columns: 5fr 1fr 10fr;
+    font-size: 12px;
+  }
   a {
     grid-column: 1/2;
   }

@@ -23,6 +23,12 @@
         ul li {
           font-family: "Roboto";
           font-size: 18px;
+          @include media("<=desktop") {
+            font-size: 14px;
+          }
+          @include media("<=phone") {
+            font-size: 12px;
+          }
           &:nth-child(1n + 2) {
             margin-top: 11px;
           }
@@ -40,6 +46,9 @@
       a {
         align-self: center;
         font-size: 24px;
+        @include media("<=desktop") {
+          font-size: 18px;
+        }
       }
     }
   }

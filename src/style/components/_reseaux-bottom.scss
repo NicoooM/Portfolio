@@ -2,6 +2,15 @@
   display: grid;
   grid-template-columns: 4fr 1fr 1fr 4fr;
   font-family: "Roboto";
+  @include media("<=desktop") {
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+  }
+  @include media("<=tablet") {
+    font-size: 14px;
+  }
+  @include media("<=phone") {
+    font-size: 12px;
+  }
   .linkedin {
     grid-column: 2/3;
     justify-self: center;

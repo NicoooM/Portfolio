@@ -154,26 +154,96 @@ h5 {
 h1 {
   font-size: 144px;
 }
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 96px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 72px;
+  }
+}
+@media (max-width: 320px) {
+  h1 {
+    font-size: 48px;
+  }
+}
 
 h2 {
   font-size: 96px;
+}
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 72px;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 320px) {
+  h2 {
+    font-size: 36px;
+  }
 }
 
 h3 {
   font-size: 48px;
 }
+@media (max-width: 1024px) {
+  h3 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  h3 {
+    font-size: 24px;
+  }
+}
 
 h4 {
   font-size: 36px;
+}
+@media (max-width: 1024px) {
+  h4 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  h4 {
+    font-size: 18px;
+  }
 }
 
 h5 {
   font-size: 24px;
 }
+@media (max-width: 1024px) {
+  h5 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  h5 {
+    font-size: 18px;
+  }
+}
 
 p {
   font-family: "Roboto";
   font-size: 18px;
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  p {
+    font-size: 12px;
+  }
 }
 
 .container {
@@ -184,6 +254,23 @@ header {
   height: 1vh;
   display: grid;
   grid-template-columns: 20% 1fr 30%;
+}
+@media (max-width: 1024px) {
+  header {
+    grid-template-columns: 3fr 1fr 4fr;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 5fr 1fr 8fr;
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    grid-template-columns: 5fr 1fr 10fr;
+    font-size: 12px;
+  }
 }
 header a {
   grid-column: 1/2;
@@ -243,6 +330,16 @@ header nav ul {
   font-family: "Roboto";
   font-size: 18px;
 }
+@media (max-width: 1024px) {
+  .project .details .details-haut .missions ul li {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .project .details .details-haut .missions ul li {
+    font-size: 12px;
+  }
+}
 .project .details .details-haut .missions ul li:nth-child(1n+2) {
   margin-top: 11px;
 }
@@ -258,6 +355,11 @@ header nav ul {
 .project .details .project-link a {
   align-self: center;
   font-size: 24px;
+}
+@media (max-width: 1024px) {
+  .project .details .project-link a {
+    font-size: 18px;
+  }
 }
 
 a {
@@ -307,11 +409,36 @@ a.white-link {
   height: 90px;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .reseaux-side {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .reseaux-side {
+    font-size: 12px;
+  }
+}
 
 .reseaux {
   display: grid;
   grid-template-columns: 4fr 1fr 1fr 4fr;
   font-family: "Roboto";
+}
+@media (max-width: 1024px) {
+  .reseaux {
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .reseaux {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .reseaux {
+    font-size: 12px;
+  }
 }
 .reseaux .linkedin {
   grid-column: 2/3;
@@ -341,6 +468,12 @@ html {
   top: 50%;
   transform: translateY(-50%);
 }
+@media (max-width: 1024px) {
+  #landing .side-nav {
+    width: 21.5px;
+    height: 138px;
+  }
+}
 #landing .side-nav ul {
   width: 100%;
   height: 100%;
@@ -355,6 +488,11 @@ html {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1024px) {
+  #landing .side-nav ul li {
+    height: 21.5px;
+  }
+}
 #landing .side-nav ul li a {
   width: 27px;
   height: 27px;
@@ -363,6 +501,12 @@ html {
   display: block;
   background: #929292;
   transition: transform 0.3s ease-in-out;
+}
+@media (max-width: 1024px) {
+  #landing .side-nav ul li a {
+    height: 21.5px;
+    width: 21.5px;
+  }
 }
 #landing .side-nav ul li a.active {
   transform: scale(1);
@@ -373,6 +517,11 @@ html {
   height: 130px;
   font-size: 36px;
   font-family: "Marcellus";
+}
+@media (max-width: 1024px) {
+  #landing ul.list-projets {
+    grid-template-columns: repeat(7, 1fr);
+  }
 }
 #landing ul.list-projets p {
   width: 210px;
@@ -450,16 +599,6 @@ html {
 }
 #landing .reseaux {
   margin-top: 10vh;
-  display: grid;
-  grid-template-columns: 4fr 1fr 1fr 4fr;
-  font-family: "Roboto";
-  color: #292929;
-}
-#landing .reseaux .linkedin {
-  grid-column: 2/3;
-}
-#landing .reseaux .git {
-  grid-column: 3/4;
 }
 
 #projets {
@@ -475,6 +614,16 @@ html {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
+}
+@media (max-width: 1024px) {
+  #projets ul.projets-num {
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  #projets ul.projets-num {
+    grid-template-columns: 0fr 1fr;
+  }
 }
 #projets ul.projets-num li a {
   display: flex;
@@ -493,6 +642,11 @@ html {
 #projets ul.projets-num li.projet-1 {
   grid-row: 1/2;
   justify-self: flex-start;
+}
+@media (max-width: 768px) {
+  #projets ul.projets-num li.projet-1 {
+    grid-columns: 0/1;
+  }
 }
 #projets ul.projets-num li.projet-1 p {
   margin-left: 2vw;
@@ -551,13 +705,30 @@ html {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  #a-propos .a-propos-container {
+    flex-direction: column;
+  }
+}
 #a-propos .a-propos-container img {
   height: 300px;
   margin: auto auto;
 }
+@media (max-width: 768px) {
+  #a-propos .a-propos-container img {
+    height: 200px;
+  }
+}
 #a-propos .a-propos-container p {
   height: 255px;
   width: 500px;
+}
+@media (max-width: 768px) {
+  #a-propos .a-propos-container p {
+    width: 100%;
+    height: 100%;
+    margin-top: 10vh;
+  }
 }
 
 #contact {
@@ -585,10 +756,36 @@ html {
   color: #f9f9f9;
   font-family: "Marcellus";
   font-size: 36px;
+  align-self: center;
+}
+@media (max-width: 1024px) {
+  #contact .mail-container a.mail {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  #contact .mail-container a.mail {
+    font-size: 18px;
+  }
+}
+@media (max-width: 320px) {
+  #contact .mail-container a.mail {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  #contact .mail-container img {
+    width: 20px;
+  }
+}
+@media (max-width: 320px) {
+  #contact .mail-container img {
+    display: none;
+  }
 }
 #contact p {
   margin-top: 10vh;
-  width: 250px;
+  width: 30%;
   margin-left: 70%;
 }
 #contact .reseaux {

@@ -40,30 +40,11 @@ const landingTextProject1 = document.querySelector("#landing-text-projet-1");
 const landingTextProject2 = document.querySelector("#landing-text-projet-2");
 const landingTextProject3 = document.querySelector("#landing-text-projet-3");
 const landingTextProject4 = document.querySelector("#landing-text-projet-4");
-// const landingTextsProject = [
-//   landingTextProject1,
-//   landingTextProject2,
-//   landingTextProject3,
-//   landingTextProject4,
-// ];
 
 const landingNumProject1 = document.querySelector(".projet-1-link");
 const landingNumProject2 = document.querySelector(".projet-2-link");
 const landingNumProject3 = document.querySelector(".projet-3-link");
 const landingNumProject4 = document.querySelector(".projet-4-link");
-// const landingNumsProject = [
-//   landingNumProject1,
-//   landingNumProject2,
-//   landingNumProject3,
-//   landingNumProject4,
-// ];
-
-// const landingProjects = {
-//   landingNumProject1: landingTextProject1,
-//   landingNumProject2: landingTextProject2,
-//   landingNumProject3: landingTextProject3,
-//   landingNumProject4: landingTextProject4,
-// };
 
 landingNumProject1.addEventListener("mouseenter", () => {
   landingTextProject1.classList.add("active");
@@ -92,12 +73,3 @@ landingNumProject4.addEventListener("mouseenter", () => {
 landingNumProject4.addEventListener("mouseleave", () => {
   landingTextProject4.classList.remove("active");
 });
-
-// for (const num in landingProjects) {
-//   num.addEventListener("mouseenter", () => {
-//     landingProject[num].classList.add("active");
-//   });
-//   num.addEventListener("mouseleave", () => {
-//     landing[num].classList.remove("active");
-//   });
-// }
