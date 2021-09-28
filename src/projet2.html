@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/style/main.scss" />
     <link rel="icon" href="./img/favicon.ico" />
     <meta name="identifier-url" content="https://nicolasmarsan.com" />
-    <meta name="title" content="Nicolas Marsan Portfolio - Projet 2" />
+    <meta name="title" content="Portfolio - Projet 2" />
     <meta name="Category" content="Portfolio" />
     <meta
       name="description"
@@ -25,36 +25,23 @@
     <meta name="robots" content="index, follow" />
   </head>
   <body class="container" id="container">
-    <header id="header">
-      <a href="index.html" class="roboto black-link">Nicolas Marsan</a>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html#projets" class="roboto black-link">Projets</a>
-          </li>
-          <li>
-            <a href="index.html#a-propos" class="roboto black-link">A propos</a>
-          </li>
-          <li>
-            <a href="index.html#contact" class="roboto black-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <include src="src/components/header.html"></include>
     <main>
       <section class="project project-2">
         <h1>Projet 02</h1>
-        <h3>Création d’un site de A à Z</h3>
+        <h3>Clone Trello</h3>
         <div class="reseaux-side">
           <a
             href="https://www.linkedin.com/in/nicolas-marsan/"
             target="_blank"
+            rel="noreferrer"
             class="black-link roboto"
             >In</a
           >
           <a
             href="https://github.com/NicoooM"
             target="_blank"
+            rel="noreferrer"
             class="black-link roboto"
             >Git</a
           >
@@ -64,75 +51,45 @@
             <div class="missions">
               <h4>Missions</h4>
               <ul>
-                <li>UX Design</li>
-                <li>UI Design</li>
-                <li>Intégration</li>
+                <li>Front avec React</li>
+                <li>Design</li>
               </ul>
             </div>
             <div class="duree">
               <h4>Durée</h4>
-              <p>2.5 semaines</p>
+              <p>3 semaines</p>
             </div>
           </div>
           <div class="resume">
             <p>
-              Le projet main dans la main est le second gros projet du DUT MMI
-              concernant le web. Nous devions réaliser un site en partant de
-              zéro, de l’idéation au développement. Le thème était le covid-19,
-              nous avons donc décidé de faire un site vitrine d’un site de
-              location de matériel pour les étudiants (site de location fictif
-              bien entendu).
-            </p>
-            <p>
-              En ce qui concerne les technologies utilisées, nous nous sommes
-              servis de Jekyll pour travailler plus facilement en équipe. Nous
-              utilisons aussi le préprocesseur Sass, en plus des langages du web
-              de base. Le développement du site a été fait en mobile first, et
-              par manque de temps et de connaissances à ce moment-là, nous
-              n’avons pas pu faire complètement la version ordinateur. A voir
-              donc de préférence sur mobile.
+              Le projet Clone Trello est un site que j'ai réalisé seul. Pour
+              commencer à apprendre React, j'ai décidé de faire une "copie" de
+              certaines fonctionnalités de l'application Trello. Elle me
+              semblait très adaptée aux systèmes de composants que React
+              apporte. J'ai donc pu, à travers ce projet, découvrir le framework
+              et utiliser les principaux Hooks.
             </p>
           </div>
           <div class="project-link">
             <a
-              href="https://tech-art.netlify.app/"
+              href="https://trello-clone-react-test.netlify.app/"
               target="_blank"
+              rel="noreferrer"
               class="black-link roboto"
               >Voir le site</a
             ><img src="./img/fleche-droite.svg" alt />
           </div>
         </div>
         <p class="scroll">Scroll</p>
-        <div class="img-container">
-          <div class="left">
-            <img
-              src="img/img-1-projet-2.jpg"
-              alt="Première image du projet 2"
-            /><img
-              src="img/img-3-projet-2.jpg"
-              alt="Troisième image du projet 2"
-            /><img
-              src="img/img-5-projet-2.jpg"
-              alt="Cinquième image du projet 2"
-            />
-          </div>
-          <div class="right">
-            <img
-              src="img/img-2-projet-2.jpg"
-              alt="Deuxième image du projet 2"
-            /><img
-              src="img/img-4-projet-2.jpg"
-              alt="Quatrième image du projet 2"
-            />
-          </div>
-        </div>
+        <img src="./img/project2.png" alt="Projet 1" class="img-projet" />
         <footer>
           <ul class="reseaux">
             <li class="linkedin">
               <a
                 href="https://www.linkedin.com/in/nicolas-marsan/"
-                class="black-link"
+                class="black-link hover"
                 target="_blank"
+                rel="noreferrer"
                 >LinkedIn</a
               >
             </li>
@@ -140,7 +97,8 @@
               <a
                 href="https://github.com/NicoooM"
                 target="_blank"
-                class="black-link"
+                rel="noreferrer"
+                class="black-link hover"
                 >GitHub</a
               >
             </li>

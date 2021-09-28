@@ -7,7 +7,7 @@
     <title>Nicolas Marsan Porfolio - Projet 4</title>
     <link rel="stylesheet" href="/style/main.scss" />
     <link rel="icon" href="./img/favicon.ico" />
-    <meta name="title" content="Nicolas Marsan Portfolio - Projet 4" />
+    <meta name="title" content="Portfolio - Projet 4" />
     <meta name="Category" content="Portfolio" />
     <meta
       name="description"
@@ -24,22 +24,7 @@
     <meta name="robots" content="index, follow" />
   </head>
   <body class="container" id="container">
-    <header id="header">
-      <a href="index.html" class="roboto black-link">Nicolas Marsan</a>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html#projets" class="roboto black-link">Projets</a>
-          </li>
-          <li>
-            <a href="index.html#a-propos" class="roboto black-link">A propos</a>
-          </li>
-          <li>
-            <a href="index.html#contact" class="roboto black-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <include src="src/components/header.html"></include>
     <main>
       <section class="project project-1">
         <h1>Bientôt !</h1>
@@ -47,13 +32,15 @@
           <a
             href="https://www.linkedin.com/in/nicolas-marsan/"
             target="_blank"
-            class="black-link roboto"
+            rel="noreferrer"
+            class="black-link roboto hover"
             >In</a
           >
           <a
             href="https://github.com/NicoooM"
             target="_blank"
-            class="black-link roboto"
+            rel="noreferrer"
+            class="black-link roboto hover"
             >Git</a
           >
         </div>

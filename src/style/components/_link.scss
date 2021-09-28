@@ -1,7 +1,8 @@
 a {
   text-decoration: none;
+  position: relative;
   &.roboto {
-    font-family: "Roboto";
+    font-family: "Marcellus";
   }
   &.marcellus {
     font-family: "Marcellus";
@@ -11,5 +12,41 @@ a {
   }
   &.white-link {
     color: $blanc;
+  }
+  &.hover {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      top: 100%;
+      left: 0;
+      background-color: $noir;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+  &.hover-white {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 1px;
+      top: 100%;
+      left: 0;
+      background-color: $blanc;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
   }
 }

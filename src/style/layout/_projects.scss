@@ -21,9 +21,9 @@
       }
       .missions {
         ul li {
-          font-family: "Roboto";
+          font-family: "Marcellus";
           font-size: 18px;
-          @include media("<=desktop") {
+          @include media("<=tablet") {
             font-size: 14px;
           }
           @include media("<=phone") {

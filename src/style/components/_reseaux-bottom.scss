@@ -1,7 +1,7 @@
 .reseaux {
   display: grid;
   grid-template-columns: 4fr 1fr 1fr 4fr;
-  font-family: "Roboto";
+  font-family: "Marcellus";
   @include media("<=desktop") {
     grid-template-columns: 1fr 2fr 2fr 1fr;
   }

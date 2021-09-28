@@ -8,7 +8,6 @@ ScrollReveal().reveal("a", { delay: 300 });
 ScrollReveal().reveal(".side-nav");
 ScrollReveal().reveal(".side-nav");
 ScrollReveal().reveal(".reseaux-side", { delay: 300 });
-ScrollReveal().reveal("h2", { delay: 300 });
 ScrollReveal().reveal("h3", { delay: 300 });
 ScrollReveal().reveal("h4", { delay: 300 });
 ScrollReveal().reveal("h5", { delay: 300 });

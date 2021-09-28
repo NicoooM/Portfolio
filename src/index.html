@@ -28,44 +28,35 @@
     <meta name="robots" content="index, follow" />
   </head>
   <body class="container" id="container">
-    <header id="header">
-      <a href="index.html" class="roboto black-link">Nicolas Marsan</a>
-      <nav>
-        <ul>
-          <li><a href="#projets" class="roboto black-link">Projets</a></li>
-          <li><a href="#a-propos" class="roboto black-link">A propos</a></li>
-          <li><a href="#contact" class="roboto black-link">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <include src="src/components/header.html"> </include>
     <main>
       <section id="landing">
-        <div class="side-nav">
-          <ul>
-            <li><a href="#container" id="anchor-header"></a></li>
-            <li><a href="#projets" id="anchor-projets"></a></li>
-            <li><a href="#a-propos" id="anchor-a-propos"></a></li>
-            <li><a href="#contact" id="anchor-contact"></a></li>
-          </ul>
-        </div>
         <ul class="list-projets">
           <li class="project-1">
-            <p id="landing-text-projet-1">Refonte d'un site web</p>
-            <a href="projet1.html" class="black-link projet-1-link">01</a>
+            <p id="landing-text-projet">Clone Spotify</p>
+            <a
+              href="projet1.html"
+              class="black-link projet-1-link"
+              id="projet-link"
+              style="transform: translateY(-50%) translateX(-50%)"
+              >01</a
+            >
           </li>
           <li class="projet-2">
             <a
               href="projet2.html"
               class="black-link projet-landing projet-2-link"
+              id="projet-link"
               >02</a
             >
-            <p id="landing-text-projet-2">Création d'un site de A à Z</p>
+            <p id="landing-text-projet">Clone Trello</p>
           </li>
           <li class="project-3">
-            <p id="landing-text-projet-3">Animation 3D</p>
+            <p id="landing-text-projet">Refonte de site web</p>
             <a
               href="projet3.html"
               class="black-link projet-landing projet-3-link"
+              id="projet-link"
               >03</a
             >
           </li>
@@ -73,16 +64,17 @@
             <a
               href="projet4.html"
               class="black-link projet-landing projet-4-link"
+              id="projet-link"
               >04</a
             >
-            <p id="landing-text-projet-4">Bientôt !</p>
+            <p id="landing-text-projet">Bientôt !</p>
           </li>
         </ul>
         <h1>Mon<br />Portfolio</h1>
         <p class="presentation">
-          Hello ! Je suis étudiant, je fais<br />
-          du développement web et<br />
-          occasionnellement de la 3D.
+          Hello ! Je m'appelle Nicolas<br />
+          Marsan, je suis étudiant et je<br />
+          fais du développement web.<br />
         </p>
         <p class="scroll">Scroll</p>
         <ul class="reseaux">
@@ -90,7 +82,8 @@
             <a
               href="https://www.linkedin.com/in/nicolas-marsan/"
               target="_blank"
-              class="black-link"
+              rel="noreferrer"
+              class="black-link hover"
               >LinkedIn</a
             >
           </li>
@@ -98,7 +91,8 @@
             <a
               href="https://github.com/NicoooM"
               target="_blank"
-              class="black-link"
+              rel="noreferrer"
+              class="black-link hover"
               >GitHub</a
             >
           </li>
@@ -110,21 +104,21 @@
           <li class="projet projet-1">
             <a href="projet1.html" class="black-link"
               ><span>01</span>
-              <p>Refonte d'un site web</p>
+              <p>Clone Spotify</p>
               <img src="./img/fleche-droite.svg" alt
             /></a>
           </li>
           <li class="projet projet-2">
             <a href="projet2.html" class="black-link"
               ><img src="./img/fleche-gauche.svg" alt />
-              <p>Création d'un site web</p>
+              <p>Clone Trello</p>
               <span>02</span>
             </a>
           </li>
           <li class="projet projet-3">
             <a href="projet3.html" class="black-link"
               ><span>03</span>
-              <p>Animation 3D</p>
+              <p>Refonte de site web</p>
               <img src="./img/fleche-droite.svg" alt
             /></a>
           </li>
@@ -147,14 +141,13 @@
         <div class="a-propos-container">
           <img src="./img/photo-profil.jpg" alt="Photo de profil" />
           <p>
-            J’ai 18 ans et je suis étudiant en DUT Métiers du Multimédia et de
+            J’ai 19 ans et je suis étudiant en DUT Métiers du Multimédia et de
             l’Internet à l’IUT Bordeaux Montaigne.<br /><br />
-            Je travaille principalement dans le développement web, que ce soit
-            le front-end ou le back-end, mais j’aime aussi parfois faire de la
-            3D.<br /><br />
-            Outils: VS Code, Figma, Trello, Blender, Git<br /><br />
-            Langages: HTML, SCSS, JS, PHP, SQL<br /><br />
-            Compétences: UX/UI design, accessibilité pour le web, SEO,
+            Je travaille dans le développement web, principalement le front-end,
+            mais ça m'arrive aussi de faire du back-end.<br /><br />
+            Outils: VS Code, Figma, Trello, Git, Photoshop<br /><br />
+            Langages: HTML, CSS, JS, PHP, SQL<br /><br />
+            Compétences: React, UX/UI design, accessibilité pour le web, SEO,
             organisation agile
           </p>
         </div>
@@ -176,7 +169,8 @@
               <a
                 href="https://www.linkedin.com/in/nicolas-marsan/"
                 target="_blank"
-                class="white-link"
+                rel="noreferrer"
+                class="white-link hover-white"
                 >LinkedIn</a
               >
             </li>
@@ -184,7 +178,8 @@
               <a
                 href="https://github.com/NicoooM"
                 target="_blank"
-                class="white-link"
+                rel="noreferrer"
+                class="white-link hover-white"
                 >GitHub</a
               >
             </li>
