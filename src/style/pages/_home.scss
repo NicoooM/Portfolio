@@ -186,6 +186,7 @@ html {
     grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
     @include media("<=desktop") {
       grid-template-columns: 1fr 8fr 1fr;
+      row-gap: 3vh;
     }
     @include media("<=tablet") {
       grid-template-columns: 0fr 1fr;
@@ -347,7 +348,7 @@ html {
     margin-left: 70%;
     @include media("<=tablet") {
       width: 180px;
-      margin-left: 50%;
+      margin-left: auto;
     }
     @include media("<=phone") {
     }

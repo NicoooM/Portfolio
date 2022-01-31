@@ -1,0 +1,34 @@
+.project-3 {
+  .img-container {
+    margin-top: 10vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    img {
+      width: 100%;
+    }
+    .left {
+      grid-column: 1/2;
+      display: flex;
+      flex-direction: column;
+      img:nth-child(2) {
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+      }
+    }
+    .right {
+      grid-column: 3/4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
+  .img-projet {
+    margin-top: 10vh;
+    width: 100%;
+  }
+  .reseaux {
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+  }
+}
